@@ -1,21 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const Info = ({item}) => {
+const Info = ({ item }) => {
+  const { first_name, last_name, gender, email, avatar } = item;
 
-    const {first_name ,  last_name} = item
-    
-    console.log(item)
+  console.log(item);
   return (
-    <div>
-      
-      <tr>
-            <th scope="row">{first_name}</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-    </div>
-  )
-}
+    <tr>
+      <td>{first_name}</td>
+      <td>{email}</td>
+      <td>
+        <img src={avatar} alt="" />
+      </td>
+      <td>{gender}</td>
+    </tr>
+  );
+};
 
-export default Info
+export default Info;

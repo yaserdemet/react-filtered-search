@@ -14,9 +14,9 @@ const Table = () => {
       <table className="table table-dark table-striped">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            
             <th scope="col">FirstName</th>
-            <th scope="col">LastName</th>
+            <th scope="col">Email</th>
             <th scope="col">Avatar</th>
             <th scope="col">Email</th>
           </tr>
@@ -26,11 +26,11 @@ const Table = () => {
           {
             data.map((item,index) => {
                 return (
-                    <tr key={index}>
+                    
 
-                        <Info item={item} />
+                        <Info  item={item} />
 
-                    </tr>
+                    
                 )
             })
           } 
