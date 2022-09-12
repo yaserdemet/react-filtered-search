@@ -1,4 +1,4 @@
-[{"id":1,"first_name":"Matilde","avatar":"https://robohash.org/quasipossimusaliquid.png?size=50x50&set=set1","email":"mwych0@yahoo.com","gender":"Female","ip_address":"231.231.117.50"},
+export const data = [{"id":1,"first_name":"Matilde","avatar":"https://robohash.org/quasipossimusaliquid.png?size=50x50&set=set1","email":"mwych0@yahoo.com","gender":"Female","ip_address":"231.231.117.50"},
 {"id":2,"first_name":"Waylen","avatar":"https://robohash.org/quiblanditiisdoloribus.png?size=50x50&set=set1","email":"wwaycott1@globo.com","gender":"Non-binary","ip_address":"119.148.48.102"},
 {"id":3,"first_name":"Jesselyn","avatar":"https://robohash.org/quidemexplicaboullam.png?size=50x50&set=set1","email":"jandreotti2@blogger.com","gender":"Female","ip_address":"240.37.231.143"},
 {"id":4,"first_name":"Ricky","avatar":"https://robohash.org/cumeaquis.png?size=50x50&set=set1","email":"rloney3@nymag.com","gender":"Female","ip_address":"101.213.127.248"},
