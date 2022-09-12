@@ -3,7 +3,7 @@ import React from "react";
 const Info = ({ item }) => {
   const { first_name, last_name, gender, email, avatar } = item;
 
-  console.log(item);
+  // console.log(item);
   return (
     <tr>
       <td>{first_name}</td>

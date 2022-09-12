@@ -1,12 +1,15 @@
-import './App.css';
-import Search from './components/Search';
-import Table from './components/Table';
+import "./App.css";
+import Search from "./components/Search";
+import Table from "./components/Table";
+import Context from "./contexApi/Context";
 
 function App() {
   return (
     <div className="App">
-          <Search />
-          <Table />
+      <Context>
+        <Search />
+        <Table />
+      </Context>
     </div>
   );
 }

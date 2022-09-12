@@ -3,13 +3,21 @@ import { useState } from 'react'
 import { createContext } from 'react'
 import { useContext } from 'react'
 
-const global = createContext()
-export const useGlobal = useContext(global)
+export const globalContext =createContext()
+export const useGlobalContext = () => {
+    return useContext(globalContext)
+}
 
 
-const Context = () => {
+const Context = ({children}) => {
+    const [search , setSearch] = useState("")
+    const [dataa , setDataa] = useState()
   return (
-    <div>Context</div>
+    
+    <globalContext.Provider value={{search , setSearch , dataa , setDataa}}>
+        {children}
+    </globalContext.Provider>
+
   )
 }
 
