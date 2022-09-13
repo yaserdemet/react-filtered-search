@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useGlobalContext } from "../contexApi/Context";
 import { useRef, useEffect } from "react";
 import { data } from "../helpers/data";
