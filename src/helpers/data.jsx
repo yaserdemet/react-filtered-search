@@ -97,4 +97,6 @@ export const data = [{"id":1,"first_name":"Matilde","avatar":"https://robohash.o
 {"id":97,"first_name":"Alissa","avatar":"https://robohash.org/enimaperiammodi.png?size=50x50&set=set1","email":"adamrell2o@springer.com","gender":"Female","ip_address":"247.247.188.20"},
 {"id":98,"first_name":"Frannie","avatar":"https://robohash.org/reprehenderiteanon.png?size=50x50&set=set1","email":"fbifield2p@blogspot.com","gender":"Male","ip_address":"38.204.197.52"},
 {"id":99,"first_name":"Jessi","avatar":"https://robohash.org/voluptatempossimusporro.png?size=50x50&set=set1","email":"jmuir2q@archive.org","gender":"Female","ip_address":"99.203.203.28"},
-{"id":100,"first_name":"Alex","avatar":"https://robohash.org/reiciendisautlaudantium.png?size=50x50&set=set1","email":"agaywood2r@ebay.com","gender":"Male","ip_address":"251.63.202.200"}]
+{"id":100,"first_name":"Alex","avatar":"https://robohash.org/reiciendisautlaudantium.png?size=50x50&set=set1","email":"agaywood2r@ebay.com","gender":"Male","ip_address":"251.63.202.200"},
+{"id":101,"first_name":"Sefer","avatar":"https://robohash.org/reiciendisautlaudantium.png?size=50x50&set=set1","email":"sefer_acıkgoz.@hotmail.com","gender":"Male","ip_address":"251.63.202.200"}
+]

@@ -19,7 +19,7 @@ const Search = () => {
 
   return (
     <div className="mt-5 mb-4 w-25 container">
-      <div class="form-floating-small mb-3">
+      <div className="form-floating-small mb-3">
         <h3>Personel Information</h3>
         <input
         ref={myRef}

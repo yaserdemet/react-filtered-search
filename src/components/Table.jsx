@@ -11,15 +11,25 @@ const Table = () => {
   const [currentPage , setCurrentPage] = useState(1)
   const [perPage , setPerPage] = useState(10)
 
+  
+    // const fetchData = async () =>{
+    //   const url = "https://dummyjson.com/products"
+    //   const res = await fetch(url)
+    //   const data = await res.json()
+    //   console.log(data)
+    // }
+    
+
+
   useEffect(() => {
+
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
-  // console.log(dataa);
+  // console.log(data.filter(item => item.first_name.toLowerCase().includes("ar")));
 
-
-    const indexOfLastPost = 
+ 
 
   return (
     <div className="w-75  m-auto">
@@ -48,7 +58,7 @@ const Table = () => {
                   : item.first_name.toLowerCase().includes(search);
               })
               .map((item, index) => {
-                return <Info item={item} />;
+                return <Info  key = {index} item={item} />;
               })
           )}
         </tbody>
