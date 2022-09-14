@@ -3,6 +3,7 @@ import { data } from "../helpers/data.jsx";
 import { useEffect, useState } from "react";
 import Info from "./Info.jsx";
 import { useGlobalContext } from "../contexApi/Context";
+import Pagination from "./Pagination.jsx";
 
 const Table = () => {
   const { search, setSearch } = useGlobalContext();
@@ -12,14 +13,15 @@ const Table = () => {
   const [perPage , setPerPage] = useState(10)
 
   
-    // const fetchData = async () =>{
-    //   const url = "https://dummyjson.com/products"
-    //   const res = await fetch(url)
-    //   const data = await res.json()
-    //   console.log(data)
-    // }
-    
+   const lastPost = currentPage * perPage;
+   const firstPost = lastPost - perPage;
+   const currentPost = data.slice(firstPost , lastPost)
+  console.log(currentPost);
 
+  const paginate = (pageNUmber) => {
+    setCurrentPage(pageNUmber)
+
+  }
 
   useEffect(() => {
 
@@ -33,6 +35,8 @@ const Table = () => {
 
   return (
     <div className="w-75  m-auto">
+        <Pagination   perPage={perPage} totalPosts={data.length} paginate={paginate} />
+
       <table className="table table-dark table-striped">
         <thead>
           <tr>
@@ -51,7 +55,7 @@ const Table = () => {
               alt=""
             />
           ) : (
-            data
+            currentPost
               .filter((item) => {
                 return search.toLowerCase() === ""
                   ? item
