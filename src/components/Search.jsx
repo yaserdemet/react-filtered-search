@@ -3,9 +3,12 @@ import { useGlobalContext } from "../contexApi/Context";
 import { useRef, useEffect } from "react";
 import { data } from "../helpers/data";
 import { motion } from "framer-motion";
+import useReading from "../hooks/useReading";
 const Search = () => {
   const { search, setSearch } = useGlobalContext();
   const { dataa, setDataa } = useGlobalContext();
+  const completion = useReading()
+  
 
   // console.log(dataa.length)
   //   console.log(search);
@@ -17,6 +20,10 @@ const Search = () => {
   }, []);
 
   return (
+    <>
+    <div className="progress position-top fixed-top" >
+  <div className="progress-bar progress-bar-striped bg-warning  py-2" role="progressbar" aria-label="Info striped example" style={{width: "110%" , transform : `translateX(${completion-100}%)`}}  aria-valuemin="0"></div>
+</div>
     <motion.div
       className="mt-5 mb-4 w-25 container"
       transition={{ type: "spring", duration: 1, bounce: 0.3 }}
@@ -48,6 +55,7 @@ const Search = () => {
 </p> */}
       </div>
     </motion.div>
+    </>
   );
 };
 

@@ -21,7 +21,7 @@ const Table = ({ isVisible }) => {
   const currentPost = data.slice(firstPost, lastPost);
 
   const pageNumbers = [];
- 
+
   
   // console.log(currentPost);
 
