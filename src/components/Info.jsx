@@ -7,9 +7,6 @@ const Info = ({ item }) => {
 
   // console.log(item);
 
-  const handleClick = (id) => {
-     
-  }
 
   return (
     <motion.tr

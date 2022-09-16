@@ -19,10 +19,25 @@ const Table = ({ isVisible }) => {
   const lastPost = currentPage * perPage;
   const firstPost = lastPost - perPage;
   const currentPost = data.slice(firstPost, lastPost);
-  console.log(currentPost);
+
+  const pageNumbers = [];
+ 
+  
+  // console.log(currentPost);
 
   const paginate = (pageNUmber) => {
+    
+  
     setCurrentPage(pageNUmber);
+    if(pageNUmber == "Next Page"){
+      setCurrentPage(currentPage  + 1)
+    }
+    else if (pageNUmber == "Previous Page"){
+      setCurrentPage(currentPage - 1)
+    }
+      if(currentPage == pageNumbers.length-1) {
+        pageNumbers.unshift()
+      }
   };
 
   useEffect(() => {
@@ -51,6 +66,7 @@ const Table = ({ isVisible }) => {
           perPage={perPage}
           totalPosts={data.length}
           paginate={paginate}
+          pageNumbers={ pageNumbers}
         />
 
         <table className="table table-dark table-striped " id="x">
