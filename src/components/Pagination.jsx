@@ -1,15 +1,16 @@
 import React from 'react'
-
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 const Pagination = ({ perPage, totalPosts, paginate }) => {
     const pageNumbers = [];
+    const [animationParent] = useAutoAnimate()
 
-    for(let i=1; i<Math.ceil(totalPosts / perPage); i++){
+    for(let i=1; i  <  Math.ceil(totalPosts / perPage); i++){
         pageNumbers.push(i)
     }
   return (
     <div>
-        <nav>
-            <ul className='pagination'>
+        <nav >
+            <ul  className='pagination'>
 
                 {
                     pageNumbers.map(number => (
