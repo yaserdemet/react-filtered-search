@@ -1,30 +1,29 @@
-# Getting Started with Create React App
+### React-FramerMotion  <img src="https://user-images.githubusercontent.com/99739515/191307860-b90cb1b3-b0ee-49d8-b56d-d91236acf183.png" width="60"/>
+![Animation](https://user-images.githubusercontent.com/99739515/191311511-14a90888-cdf1-4ae3-b015-29e6c13db5ad.gif)
+#### Problem Statement
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+- This project aims to create paginated page with Framer Motion.
 
-In the project directory, you can run:
+### In this project, i have used;
 
-### `yarn start`
+📌 Framer Motion Animation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📌 Props and State Logic
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📌 React Router Dom
 
-### `yarn test`
+📌 State Management with Context Api
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📌 Custom Hook
 
-### `yarn build`
+📌 Async Await Function
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📌 React Hooks (useState, useEffect, useRef, useNavigate, useParams ReactMemo)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📌 React AutoAnimate
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📌 3rd Part Libraries ( Toastify, Axios, AutoAnimation )
+
+📌 Styling with Bootstrap
+
