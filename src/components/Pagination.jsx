@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
-const Pagination = ({ perPage, totalPosts, paginate , pageNumbers }) => {
+const Pagination = ({ perPage, totalPosts, paginate , pageNumbers, currentPage }) => {
     const [animationParent] = useAutoAnimate()
 
     for(let i=1; i  <  Math.ceil(totalPosts / perPage); i++){
@@ -8,6 +8,15 @@ const Pagination = ({ perPage, totalPosts, paginate , pageNumbers }) => {
     }
     pageNumbers.push("Next Page")
     pageNumbers.unshift("Previous Page")
+
+    if(currentPage == 1){
+        pageNumbers.shift()
+    }
+
+    if(currentPage == pageNumbers.length -1){
+        pageNumbers.pop()
+    }
+
   return (
     <div>
         <nav >
@@ -17,9 +26,9 @@ const Pagination = ({ perPage, totalPosts, paginate , pageNumbers }) => {
                 {
                     pageNumbers.map(number => (
                         <li key={number} className="page-item">
-                            <a className="page-link bg-dark text-light" onClick={() => paginate(number)} href="#">
+                            <button    className="page-link bg-dark text-light" onClick={() => paginate(number)} href="#">
                                 {number}
-                            </a>
+                            </button>
                             
                             
                         </li>

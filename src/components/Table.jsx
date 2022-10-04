@@ -67,6 +67,7 @@ const Table = ({ isVisible }) => {
           totalPosts={data.length}
           paginate={paginate}
           pageNumbers={ pageNumbers}
+          currentPage={currentPage}
         />
 
         <table className="table table-dark table-striped " id="x">
